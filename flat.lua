@@ -17,9 +17,9 @@ end
 
 local function turn()
     if forward then
-        turtle.TurnLeft()
+        turtle.turnLeft()
     else
-        turtle.TurnRight()
+        turtle.turnRight()
     end
 end
 
