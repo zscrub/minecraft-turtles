@@ -16,7 +16,7 @@ local function dig_up_and_return()
 end
 
 local function turn_180()
-    local turn
+    local turn = nil
     if forward then
         turn = turtle.Left
     else
@@ -28,6 +28,7 @@ local function turn_180()
         turtle.dig()
     end
     turn()
+    forward = not forward
 end
 
 for _ = 1, x do
