@@ -15,14 +15,15 @@ local function dig_up_and_return()
     end
 end
 
-local function turn_180()
-    local turn = nil
+local function turn()
     if forward then
-        turn = turtle.Left
+        turtle.Left()
     else
-        turn = turtle.Right
+        turtle.Right()
     end
+end
 
+local function turn_180()
     turn()
     if not turtle.forward() then
         turtle.dig()
