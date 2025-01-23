@@ -17,9 +17,9 @@ end
 
 local function turn()
     if forward then
-        turtle.turnLeft()
-    else
         turtle.turnRight()
+    else
+        turtle.turnLeft()
     end
 end
 
