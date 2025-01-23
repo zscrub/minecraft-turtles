@@ -4,17 +4,19 @@ local z = 0
 local forward = true
 
 local function dig_and_return()
-    if z > 0 then
+    if z < 0 then
+        return
+    elseif z > 0 then
         while turtle.detectDown() do
             turtle.digDown()
-            turtle.down()
             z = z - 1
+            turtle.down()
         end
     else
         while turtle.detectUp() do
             turtle.digUp()
-            turtle.up()
             z = z + 1
+            turtle.up()
         end
     end
 end
