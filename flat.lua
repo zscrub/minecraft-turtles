@@ -1,5 +1,5 @@
 local x = 75
-local y = 30
+local y = 26
 local z = 0
 local forward = true
 
