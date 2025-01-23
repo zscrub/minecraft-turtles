@@ -40,6 +40,7 @@ for _ = 1, x do
         if not turtle.forward() then
             turtle.dig()
             turtle.forward()
+            dig_and_return()
         end
     end
     turn_180()
