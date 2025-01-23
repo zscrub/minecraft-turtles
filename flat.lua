@@ -35,10 +35,6 @@ end
 
 for _ = 1, x do
     for _ = 1, x do
-        if not turtle.detectDown() then
-            turtle.place()
-        end
-
         dig_up_and_return()
         if not turtle.forward() then
             turtle.dig()
