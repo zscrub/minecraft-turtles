@@ -27,6 +27,7 @@ local function turn_180()
     turn()
     if not turtle.forward() then
         turtle.dig()
+        turtle.forward()
     end
     turn()
     forward = not forward
