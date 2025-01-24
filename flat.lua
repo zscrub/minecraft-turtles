@@ -6,7 +6,7 @@ local forward = true
 local function dig_and_return()
     while turtle.detectUp() do
         turtle.digUp()
-        turtle.drop()
+        turtle.drop(1)
         turtle.up()
         z = z + 1
     end
