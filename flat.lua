@@ -36,6 +36,7 @@ end
 
 for _ = 1, x do
     for _ = 1, x do
+        turtle.drop(1)
         dig_and_return()
         if not turtle.forward() then
             turtle.dig()
