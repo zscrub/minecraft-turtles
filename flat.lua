@@ -6,6 +6,7 @@ local forward = true
 local function dig_and_return()
     while turtle.detectUp() do
         turtle.digUp()
+        turtle.drop()
         turtle.up()
         z = z + 1
     end
@@ -27,6 +28,7 @@ local function turn_180()
     turn()
     if not turtle.forward() then
         turtle.dig()
+        turtle.drop(1)
         turtle.forward()
         dig_and_return()
     end
@@ -36,10 +38,10 @@ end
 
 for _ = 1, x do
     for _ = 1, x do
-        turtle.drop(1)
         dig_and_return()
         if not turtle.forward() then
             turtle.dig()
+            turtle.drop(1)
             turtle.forward()
             dig_and_return()
         end
